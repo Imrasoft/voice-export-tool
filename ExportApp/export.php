@@ -54,8 +54,8 @@
 	// db connection function
 	function dbConnection(){
 		$servername = "localhost";
-		$username = "root";
-		$password = "";
+		$username = "callcenter";
+		$password = "CallCenetr!";
 		$dbname = "lvctdataform";
 		// Create connection
 		$conn = new mysqli($servername, $username, $password, $dbname);
