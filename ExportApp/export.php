@@ -56,7 +56,7 @@
 		$servername = "localhost";
 		$username = "callcenter";
 		$password = "CallCenetr!";
-		$dbname = "lvctdataform";
+		$dbname = "callcenter";
 		// Create connection
 		$conn = new mysqli($servername, $username, $password, $dbname);
 		return $conn;
