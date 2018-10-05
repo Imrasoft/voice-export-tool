@@ -1,4 +1,5 @@
 	  
+	  
 <?php
 
 	// call export function
@@ -18,7 +19,7 @@
 		$fromDate = $_POST['fromDate'];
         $toDate = $_POST['toDate'];
 		//$sql_query = "SELECT county, caller_name, phone FROM datacaptureform";
-		$sql_query = "SELECT county, caller_name, phone, created_at FROM datacaptureform WHERE created_at BETWEEN '$fromDate' AND '$toDate'";
+		$sql_query = "SELECT county, caller_name, phone, sex, inquiry, hiv_test, hiv_status, accessing_care, prep, pep, used_testkit, kit_used, referred_for, referral_facility, where_kit_was_bought, sign_off_message, created_at FROM datacaptureform WHERE created_at BETWEEN '$fromDate' AND '$toDate'";
 
 		// Gets the data from the database
 		$result = $conn->query($sql_query);
@@ -65,4 +66,6 @@
 
 
 ?>
+
+
 
